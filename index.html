@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day SPA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="viewport">
+    <!-- Floating Particles Background -->
+    <div class="particles"></div>
+    
+    <!-- Main App Container -->
+    <div class="app-container">
+      <!-- Scalloped Top Border -->
+      <svg class="scalloped-border" viewBox="0 0 900 60" preserveAspectRatio="none">
+        <!-- Create scalloped pattern -->
+        <g id="scallops">
+          <circle cx="45" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="90" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="135" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="180" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="225" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="270" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="315" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="360" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="405" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="450" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="495" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="540" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="585" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="630" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="675" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="720" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="765" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="810" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+          <circle cx="855" cy="0" r="30" fill="#d32f2f" opacity="0.8"/>
+        </g>
+        <!-- Cover the top half -->
+        <rect x="0" y="0" width="900" height="30" fill="#ffb6c1"/>
+      </svg>
+
+      <!-- Content Container -->
+      <div class="content-wrapper">
+        <!-- Landing Screen -->
+        <div id="landing-screen" class="screen active fade-in">
+          <!-- Banner at Top Left -->
+          <img src="pngtree-valentines-day-red-hearts-hanging-png-image_6020169.jpg" alt="Banner" class="landing-banner">
+
+          <!-- Calendar Badge at Top Right -->
+          <img src="calendar.png" alt="Calendar" class="calendar-badge">
+
+          <!-- XOXO at Bottom Left -->
+          <img src="—Pngtree—a paper airplane leaving heart-shaped_2710774.png" alt="XOXO" class="xoxo-decoration">
+
+          <!-- Heart at Bottom Right -->
+          <img src="heart-shaped.png" alt="Heart" class="heart-decoration">
+
+          <!-- Image Placeholder -->
+          <div class="image-placeholder">
+            <img src="4857504.jpg" alt="Bunny hugging">
+          </div>
+
+          <!-- Typography -->
+          <h2 class="font-cursive greeting">Hey there,</h2>
+          <h1 class="main-question">Will you be my Valentine?</h1>
+
+          <!-- Buttons -->
+          <div class="buttons-container">
+            <button class="button yes-button" id="yes-btn">YES!</button>
+            <button class="button no-button escape-button" id="no-btn">NO THANK YOU</button>
+          </div>
+        </div>
+
+        <!-- Success Screen -->
+        <div id="success-screen" class="screen fade-in">
+          <!-- Header -->
+          <h1 class="font-cursive success-heading">Yay, you said yes!</h1>
+          <p class="success-subtext">I made all these for you hehe</p>
+
+          <!-- Gift Buttons -->
+          <div class="gifts-container">
+            <button class="gift-button" data-gift="1">
+              <svg class="gift-emoji" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Box -->
+                <rect x="15" y="35" width="70" height="55" rx="5" fill="#FFB6D9"/>
+                <!-- Left side shadow -->
+                <rect x="15" y="35" width="10" height="55" rx="5" fill="#FF92C2"/>
+                <!-- Top lid -->
+                <rect x="15" y="20" width="70" height="20" rx="3" fill="#FFB6D9"/>
+                <!-- Ribbon vertical -->
+                <rect x="42" y="15" width="16" height="75" rx="2" fill="#FFD700"/>
+                <!-- Ribbon horizontal -->
+                <rect x="15" y="40" width="70" height="12" rx="2" fill="#FFD700"/>
+                <!-- Bow top -->
+                <circle cx="35" cy="30" r="8" fill="#FFD700"/>
+                <circle cx="65" cy="30" r="8" fill="#FFD700"/>
+                <!-- Bow center -->
+                <circle cx="50" cy="30" r="6" fill="#FFC700"/>
+              </svg>
+              <span class="gift-label">Gift 1</span>
+            </button>
+            <button class="gift-button" data-gift="2">
+              <svg class="gift-emoji" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Box -->
+                <rect x="15" y="35" width="70" height="55" rx="5" fill="#FFB6D9"/>
+                <!-- Left side shadow -->
+                <rect x="15" y="35" width="10" height="55" rx="5" fill="#FF92C2"/>
+                <!-- Top lid -->
+                <rect x="15" y="20" width="70" height="20" rx="3" fill="#FFB6D9"/>
+                <!-- Ribbon vertical -->
+                <rect x="42" y="15" width="16" height="75" rx="2" fill="#FFD700"/>
+                <!-- Ribbon horizontal -->
+                <rect x="15" y="40" width="70" height="12" rx="2" fill="#FFD700"/>
+                <!-- Bow top -->
+                <circle cx="35" cy="30" r="8" fill="#FFD700"/>
+                <circle cx="65" cy="30" r="8" fill="#FFD700"/>
+                <!-- Bow center -->
+                <circle cx="50" cy="30" r="6" fill="#FFC700"/>
+              </svg>
+              <span class="gift-label">Gift 2</span>
+            </button>
+            <button class="gift-button" data-gift="3">
+              <svg class="gift-emoji" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Box -->
+                <rect x="15" y="35" width="70" height="55" rx="5" fill="#FFB6D9"/>
+                <!-- Left side shadow -->
+                <rect x="15" y="35" width="10" height="55" rx="5" fill="#FF92C2"/>
+                <!-- Top lid -->
+                <rect x="15" y="20" width="70" height="20" rx="3" fill="#FFB6D9"/>
+                <!-- Ribbon vertical -->
+                <rect x="42" y="15" width="16" height="75" rx="2" fill="#FFD700"/>
+                <!-- Ribbon horizontal -->
+                <rect x="15" y="40" width="70" height="12" rx="2" fill="#FFD700"/>
+                <!-- Bow top -->
+                <circle cx="35" cy="30" r="8" fill="#FFD700"/>
+                <circle cx="65" cy="30" r="8" fill="#FFD700"/>
+                <!-- Bow center -->
+                <circle cx="50" cy="30" r="6" fill="#FFC700"/>
+              </svg>
+              <span class="gift-label">Gift 3</span>
+            </button>
+          </div>
+
+          <!-- Decorative Images -->
+          <!-- Heart at Top Right -->
+          <img src="heart.png" alt="Heart" class="success-heart-decoration">
+
+          <!-- Postcard at Top Left -->
+          <img src="postcard.png" alt="Postcard" class="success-postcard-decoration-top">
+
+          <!-- New Image at Bottom Left -->
+          <img src="cc6ebeb8-98ec-4d15-a215-5c94f774b09f_removalai_preview.png" alt="Decorative" class="success-new-decoration">
+
+          <!-- Wink at Bottom Right -->
+          <img src="wink.png" alt="Wink" class="success-wink-decoration" onclick="showScreen('landing')">
+        </div>
+
+        <!-- Gift 1 Screen - Rose Bouquet -->
+        <div id="gift1-screen" class="screen fade-in">
+          <h2 class="gift-header">Your Rose Bouquet</h2>
+
+          <!-- Center Bouquet -->
+          <div class="bouquet-container">
+            <div class="bouquet-image">🌹</div>
+          </div>
+
+          <!-- Floating Notes -->
+          <div class="note" style="top: 80px; left: 60px;">
+            <p>I will always love you no matter what</p>
+          </div>
+          <div class="note" style="bottom: 80px; left: 60px;">
+            <p>You are the best part of my life</p>
+          </div>
+          <div class="note" style="top: 100px; right: 120px;">
+            <p>You will forever be my only option</p>
+          </div>
+          <div class="note" style="bottom: 100px; right: 120px;">
+            <p>I can't imagine a life without you in it</p>
+          </div>
+
+          <!-- Navigation -->
+          <button class="nav-button back-button" id="gift1-back">click me →</button>
+        </div>
+
+        <!-- Gift 2 Screen - Love Letter -->
+        <div id="gift2-screen" class="screen fade-in">
+          <h2 class="gift-header">Words from my Heart</h2>
+          
+          <!-- XOXO -->
+          <div class="xoxo-text">XOXO</div>
+
+          <!-- Hugging Cats -->
+          <div class="decoration cats-deco">🐱❤️🐱</div>
+
+          <!-- Notepad -->
+          <div class="notepad">
+            <div class="notepad-lines"></div>
+            <p class="font-handwriting love-letter">
+              To the love of my life, you make my life so meaningful and I am so lucky to have you as my valentine this year. I love you wholeheartedly and I can't wait to continue loving you for the rest of my life. I know I tell you this everyday but you are literally the most beautiful girl I know. Anyways, I love you Always, Forever
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <button class="nav-button back-button" id="gift2-back">click me →</button>
+        </div>
+
+        <!-- Gift 3 Screen - Song QR Code -->
+        <div id="gift3-screen" class="screen fade-in">
+          <h2 class="gift-header">Song for you</h2>
+
+          <!-- Mailbox Decoration -->
+          <div class="decoration mailbox-deco">📬</div>
+
+          <!-- QR Code Section -->
+          <div class="qr-section">
+            <h3>Scan the QR code!</h3>
+            
+            <!-- QR Code Placeholder -->
+            <div class="qr-container">
+              <svg viewBox="0 0 29 29" class="qr-code">
+                <rect fill="#d32f2f" x="0" y="0" width="29" height="29"/>
+                <rect fill="#ffffff" x="1" y="1" width="27" height="27"/>
+                <rect fill="#d32f2f" x="2" y="2" width="7" height="7"/>
+                <rect fill="#d32f2f" x="10" y="2" width="1" height="1"/>
+                <rect fill="#d32f2f" x="12" y="3" width="1" height="1"/>
+                <rect fill="#d32f2f" x="14" y="2" width="1" height="1"/>
+                <rect fill="#d32f2f" x="20" y="2" width="7" height="7"/>
+                <rect fill="#d32f2f" x="2" y="10" width="3" height="1"/>
+                <rect fill="#d32f2f" x="6" y="11" width="2" height="1"/>
+                <rect fill="#d32f2f" x="10" y="10" width="6" height="1"/>
+                <rect fill="#d32f2f" x="17" y="10" width="2" height="1"/>
+                <rect fill="#d32f2f" x="20" y="10" width="7" height="7"/>
+                <rect fill="#d32f2f" x="3" y="14" width="1" height="3"/>
+                <rect fill="#d32f2f" x="5" y="14" width="4" height="1"/>
+                <rect fill="#d32f2f" x="10" y="15" width="1" height="1"/>
+                <rect fill="#d32f2f" x="12" y="15" width="1" height="1"/>
+                <rect fill="#d32f2f" x="14" y="14" width="1" height="1"/>
+                <rect fill="#d32f2f" x="16" y="15" width="1" height="1"/>
+                <rect fill="#d32f2f" x="19" y="15" width="1" height="1"/>
+                <rect fill="#d32f2f" x="2" y="19" width="1" height="1"/>
+                <rect fill="#d32f2f" x="4" y="18" width="5" height="2"/>
+                <rect fill="#d32f2f" x="10" y="18" width="4" height="2"/>
+                <rect fill="#d32f2f" x="15" y="19" width="1" height="1"/>
+                <rect fill="#d32f2f" x="17" y="19" width="3" height="1"/>
+                <rect fill="#d32f2f" x="21" y="19" width="1" height="1"/>
+                <rect fill="#d32f2f" x="24" y="19" width="3" height="1"/>
+                <rect fill="#d32f2f" x="4" y="21" width="2" height="1"/>
+                <rect fill="#d32f2f" x="7" y="21" width="3" height="1"/>
+                <rect fill="#d32f2f" x="12" y="20" width="2" height="2"/>
+                <rect fill="#d32f2f" x="15" y="20" width="1" height="2"/>
+                <rect fill="#d32f2f" x="17" y="21" width="3" height="1"/>
+                <rect fill="#d32f2f" x="21" y="20" width="2" height="2"/>
+                <rect fill="#d32f2f" x="24" y="21" width="3" height="1"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Restart Button -->
+          <button class="restart-button" id="restart-btn">
+            <span class="restart-heart">💕</span>
+            <span>click to restart!</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gift 1 Modal -->
+  <div class="modal" id="modal-gift1">
+    <div class="modal-content">
+      <div class="modal-gift-box">
+        <img src="WhatsApp Image 2026-02-25 at 17.44.40.png" alt="Rose Bouquet Gift" class="modal-gift-image-1">
+      </div>
+      <h2>Rose Bouquet</h2>
+      <p>I will always love you no matter what</p>
+      <p>You are the best part of my life</p>
+      <p>You will forever be my only option</p>
+      <p>I can't imagine a life without you in it</p>
+      <button class="modal-close-btn" onclick="closeModal('modal-gift1')">Close Gift</button>
+    </div>
+  </div>
+
+  <!-- Gift 2 Modal -->
+  <div class="modal" id="modal-gift2">
+    <div class="modal-content">
+      <div class="modal-gift-box">
+        <img src="hearts.png" alt="Love Letter Gift" class="modal-gift-image-2">
+      </div>
+      <h2>My Heart</h2>
+      <p>To the love of my life, you make my life so meaningful and I am so lucky to have you as my valentine this year.</p>
+      <p>I love you wholeheartedly and I can't wait to continue loving you for the rest of my life.</p>
+      <p>I know I tell you this everyday but you are literally the most beautiful girl I know.</p>
+      <p>Anyways, I love you Always, Forever 💕</p>
+      <button class="modal-close-btn" onclick="closeModal('modal-gift2')">Close Gift</button>
+    </div>
+  </div>
+
+  <!-- Gift 3 Modal -->
+  <div class="modal" id="modal-gift3">
+    <div class="modal-content">
+      <div class="modal-gift-box">
+        <img src="StockCake-Music_Connects_Hearts-2115559-medium.jpg" alt="Song Gift" class="modal-gift-image-3">
+      </div>
+      <h2>Song for You</h2>
+      <p>Scan the QR code to listen to our song!</p>
+      <svg viewBox="0 0 29 29" class="qr-code" style="width: 150px; height: 150px; margin: 20px auto;">
+        <image href="frame.png" x="1" y="1" width="27" height="27"/>
+      </svg>
+      <button class="modal-close-btn" onclick="closeModal('modal-gift3')">Close Gift</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
