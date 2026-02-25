@@ -231,3 +231,4 @@ function generateHeartParticles() {
   
   successScreen.setAttribute('data-particle-interval', particleInterval);
 }
+
